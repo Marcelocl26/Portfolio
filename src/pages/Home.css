@@ -1,0 +1,68 @@
+/* Home.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero.section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-content {
+  animation: fadeIn 2s ease-out;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #ffffff;
+  opacity: 0;
+  animation: slideInFromTop 1s ease-out forwards;
+  animation-delay: 0.5s; /* Retrasa la animación */
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0;
+  animation: slideInFromBottom 1s ease-out forwards;
+  animation-delay: 1s; /* Retrasa la animación */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de deslizamiento desde arriba */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de deslizamiento desde abajo */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

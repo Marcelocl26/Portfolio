@@ -1,0 +1,55 @@
+/* src/Projects.css */
+
+/* Contenedor principal de la página de proyectos */
+.projects-page {
+  position: relative; /* Para manejar el posicionamiento del fondo y contenido */
+  min-height: 100vh; /* Asegura que el contenedor cubra al menos el 100% de la altura de la ventana */
+}
+
+/* Contenedor para los proyectos */
+.projects-container {
+  padding: 80px 40px 40px; /* Ajusta el padding superior para empujar el fondo hacia abajo */
+  color: white;
+  background-color: #121212; /* Fondo oscuro para contraste */
+  margin-top: 0; /* Asegúrate de que no haya margen superior adicional */
+}
+
+/* Rejilla de proyectos */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea */
+  gap: 20px; /* Espacio entre los proyectos */
+}
+
+/* Tarjeta de proyecto */
+.project-card {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 300px; /* Ajustar el tamaño fijo para los proyectos */
+}
+
+/* Efecto de hover para la tarjeta */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilo del título del proyecto */
+.project-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Estilo de los párrafos dentro de la tarjeta del proyecto */
+.project-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Estilo del enlace dentro de la tarjeta del proyecto */
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}

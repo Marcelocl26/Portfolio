@@ -1,0 +1,72 @@
+/* src/pages/Experience.css */
+
+   body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+   }
+   
+   .experience-container {
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+     color: #fff; /* Texto blanco para contraste */
+     border-radius: 8px;
+     margin-top: 125px; /* Margen superior para separar de los botones superiores */
+     width: calc(100% - 40px); /* Expande el contenedor hacia los lados, dejando 20px de margen a cada lado */
+     max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+     height: auto; /* Ajusta la altura automáticamente según el contenido */
+     max-height: 90vh; /* Ajusta la altura máxima según el viewport */
+     overflow: hidden; /* Evita el desplazamiento dentro del contenedor */
+     box-sizing: border-box; /* Incluye el padding en el tamaño total */
+     position: relative; /* Asegura que el contenedor esté en el flujo normal del documento */
+     z-index: 1; /* Asegura que el contenedor esté por encima del fondo de partículas */
+   }
+   
+   .experience-container h2 {
+     font-size: 2rem;
+     margin-bottom: 20px;
+   }
+   
+   .timeline {
+     position: relative;
+     padding: 0; /* Elimina el padding para alinear mejor las tarjetas */
+     list-style: none;
+   }
+   
+   .timeline-item {
+     position: relative;
+     margin: 20px 0;
+     padding-left: 40px; /* Espacio para el icono y la línea vertical */
+   }
+   
+   .timeline-item::before {
+     content: '';
+     position: absolute;
+     left: 20px; /* Alinea la línea vertical a la izquierda */
+     top: 0;
+     bottom: 0; /* Asegura que la línea se extienda hasta el final del contenedor */
+     border-left: 2px solid #fff; /* Línea vertical de la línea de tiempo */
+     z-index: 1;
+   }
+   
+   .timeline-icon {
+     position: absolute;
+     left: 10px; /* Alinea el icono a la izquierda */
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color: #fff;
+     z-index: 2;
+   }
+   
+   .timeline-content {
+     position: relative;
+     padding: 10px 20px;
+     background-color: rgba(0, 0, 0, 0.8);
+     border-radius: 8px;
+     color: #fff;
+     margin-left: 10px; /* Ajusta el margen para alinear el contenido */
+     margin-top: -10px; /* Ajusta la posición vertical de la tarjeta */
+   }
+   

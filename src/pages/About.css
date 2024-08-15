@@ -1,0 +1,108 @@
+/* Asegúrate de que el HTML y el body ocupen el 100% de la altura de la ventana */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Aplica el desplazamiento vertical a toda la página */
+body {
+  overflow-y: auto; /* Permitir el desplazamiento vertical en toda la página */
+  background-color: #000; /* Ajustar el color de fondo según sea necesario */
+  color: #fff;
+}
+
+/* Contenedor principal para la sección "Sobre mí" */
+.about-container {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 125px;
+  box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total */
+}
+
+/* Mantén el diseño de las secciones como antes */
+.about-section {
+  margin-bottom: 20px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.skills-section {
+  margin-top: 40px;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjetas de habilidades y certificaciones */
+.language-card, .certifications-card, .skills-technical, .software-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Alineación y estilo de los iconos */
+.skills-images, .software-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 80px; /* Ajustar tamaño según sea necesario */
+}
+
+.skill-icon img {
+  width: 40px; /* Tamaño del icono */
+  height: 40px; /* Tamaño del icono */
+}
+
+.skill-icon span {
+  font-size: 0.9rem; /* Ajustar tamaño del texto */
+}
+
+.software-card li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.software-card .skill-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
