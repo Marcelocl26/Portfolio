@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./index.html">
+  <meta http-equiv="refresh" content="0; url=/Portfolio/index.html">
+  <title>Page Not Found</title>
   <script>
-    // Preserva la URL original y redirige a index.html para que React maneje la ruta.
-    window.location.replace(
-      window.location.pathname.includes('Portfolio')
-        ? './index.html'
-        : '/Portfolio/index.html'
-    );
+    // Preserve the path and query parameters and redirect to index.html
+    (function() {
+      var target = window.location.pathname.replace('/Portfolio/', '') + window.location.search;
+      window.history.replaceState({}, '', '/Portfolio/' + target);
+      window.location.replace('/Portfolio/index.html');
+    })();
   </script>
 </head>
 <body>
